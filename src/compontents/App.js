@@ -2,8 +2,7 @@ import React from 'react';
 import { localize } from 'react-localize-redux';
 import logo from '../logo.svg';
 import '../App.css';
-import Test from '../compontents/Test';
-import { getTranslate, getActiveLanguage } from 'react-localize-redux';
+import Fbpm from '../compontents/Fbpm'
 
 
 const App = ({ translate, currentLanguage }) => (
@@ -15,14 +14,9 @@ const App = ({ translate, currentLanguage }) => (
         <p className="App-intro">
             { translate('Get_started') }
         </p>
-
+<Fbpm curLang={currentLanguage}/>
     </div>
 
-)
-
-const mapStateToProps = state => ({
-    translate: getTranslate(state.locale),
-    currentLanguage: getActiveLanguage(state.locale).code
-});
+);
 
 export default localize(App, 'locale');
