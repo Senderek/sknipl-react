@@ -2,7 +2,7 @@ import React from 'react';
 import { localize } from 'react-localize-redux';
 import logo from '../logo.svg';
 import '../App.css';
-import Fbpm from '../compontents/Fbpm'
+import Fbpm from '../compontents/Fbpm';
 
 
 const App = ({ translate, currentLanguage }) => (
