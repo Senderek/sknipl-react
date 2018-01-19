@@ -1,17 +1,11 @@
 import React from 'react';
 import {render} from 'react-dom';
-import {createStore, combineReducers, applyMiddleware} from 'redux';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import {localeReducer} from 'react-localize-redux';
-import {initialize} from 'react-localize-redux';
-import { addTranslation } from 'react-localize-redux';
-import promise from 'redux-promise';
-import reducers from './reducers/reducer';
 import routes from './routes';
 import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
-import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
+import { syncHistoryWithStore } from 'react-router-redux';
 import configureStore from './store/configureStore.js';
 
 

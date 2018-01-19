@@ -13,7 +13,7 @@ export const FETCH_POST_SUCCESS = 'FETCH_POST_SUCCESS';
 export const FETCH_POST_FAILURE = 'FETCH_POST_FAILURE';
 export const RESET_ACTIVE_POST = 'RESET_ACTIVE_POST';
 
-const ROOT_URL = 'localhost:8000';
+const ROOT_URL = 'http://localhost:8000';
 
 export function fetchPosts() {
     const request = axios({
