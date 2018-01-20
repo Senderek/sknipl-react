@@ -1,6 +1,1 @@
-export const ROOT_URL = 'http://localhost:8000';
-
-export function GetROOT_URL()
-{
-    return ROOT_URL;
-}
+export const API_URL = "http://localhost:8000";

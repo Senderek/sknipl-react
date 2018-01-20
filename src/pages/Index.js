@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import PostsList from '../containers/PostsListContainer.js';
 import Fbpm from '../compontents/Fbpm';
 import logo from '../logo.svg';
@@ -14,8 +14,12 @@ class PostsIndex extends Component {
                     <h1 className="App-title">Tytul</h1>
                 </header>
                 <div className="row">
-                <PostsList className="column left"/>
-                <Fbpm className="column right"/>
+                    <div className="column left">
+                        <PostsList className="column left"/>
+                    </div>
+                    <div className="column left">
+                        <Fbpm className="column right"/>
+                    </div>
                 </div>
             </div>
         );

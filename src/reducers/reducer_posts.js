@@ -17,7 +17,13 @@ export default function(state = INITIAL_STATE, action) {
         case FETCH_POSTS_SUCCESS:
             return {...state, postsList: {posts: action.payload, error: null, loading: false}};
         case FETCH_POSTS_FAILURE:
-            error = 'blad';//action.payload || {message: action.payload.message};//2nd one is network or server down errors
+            if (action.payload != null) {
+                error = action.payload || {message: action.payload.message};//2nd one is network or server down errors
+            }
+            else
+            {
+                error = null;
+            }
             return {...state, postsList: {posts: [], error: error, loading: false}};
         case RESET_POSTS:
             return {...state, postsList: {posts: [], error: null, loading: false}};

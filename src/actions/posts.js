@@ -1,5 +1,5 @@
 import axios from 'axios';
-import globalSettings from '../globalSettings';
+import {API_URL} from '../globalSettings';
 
 //Post list
 export const FETCH_POSTS = 'FETCH_POSTS';
@@ -13,14 +13,16 @@ export const FETCH_POST_SUCCESS = 'FETCH_POST_SUCCESS';
 export const FETCH_POST_FAILURE = 'FETCH_POST_FAILURE';
 export const RESET_ACTIVE_POST = 'RESET_ACTIVE_POST';
 
-const ROOT_URL = 'http://localhost:8000';
+const ROOT_URL = API_URL;
 
 export function fetchPosts() {
     const request = axios({
         method: 'get',
-        url: `${ROOT_URL}/articles`,
-        responseType: 'application/json'
-    });
+        url: `${ROOT_URL}/articles/`,
+        ContentType: 'application/json',
+        Vary: 'Accept',
+
+});
 
     return {
         type: FETCH_POSTS,
