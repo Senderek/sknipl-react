@@ -8,7 +8,6 @@ import logo from '../profile_pic.png'
 class TopNavbar extends Component {
 
     render() {
-
         var logoStyle ={
             width: '50px'
         }
