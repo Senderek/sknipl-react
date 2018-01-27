@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import {
-    NavLink
-} from "react-router-dom";
-import logo from '../profile_pic.png'
+import {Link} from 'react-router';
+import logo from '../profile_pic.png';
 
 
 class TopNavbar extends Component {
@@ -27,6 +25,7 @@ class TopNavbar extends Component {
                     <li class="nav-item">
                         <a class="nav-link">Link</a>
                     </li>
+                    <Link to={`/posts`} activeClassName="active">LinkWorking</Link>
                 </ul>
             </nav>
         );
