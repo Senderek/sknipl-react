@@ -15,7 +15,8 @@ const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
 render(
     <Provider store={store}>
-        <App history={history}/>
+        <Router history={history} routes={routes}>
+        </Router>
     </Provider>,
     document.getElementById('root')
 );

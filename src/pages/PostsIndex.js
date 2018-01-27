@@ -12,6 +12,7 @@ class PostsIndex extends Component {
                     <div className="column left">
                         <PostsList className="column left" />
                     </div>
+                    <span>tutaj wstawiam zeby bylo widac ze dziala elo</span>
                     <div className="column left">
                         <Fbpm className="column right" />
                     </div>
