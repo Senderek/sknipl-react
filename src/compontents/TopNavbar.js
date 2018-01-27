@@ -12,19 +12,7 @@ class TopNavbar extends Component {
 
         return (
             <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-                <a class="navbar-brand">
-                    <img src={logo} alt="logo" style={logoStyle}/>
-                </a>
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Link</a>
-                    </li>
+               <ul>
                     <Link to={`/posts`} activeClassName="active">LinkWorking</Link>
                 </ul>
             </nav>
