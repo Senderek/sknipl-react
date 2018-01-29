@@ -6,8 +6,10 @@ export default class App extends Component {
     render() {
         return (
             <AppContainer>
-                <TopNavbar/>
-                {this.props.children}
+                <TopNavbar />
+                <div className="container-fluid">
+                    {this.props.children}
+                </div>
             </AppContainer>
         );
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Route, IndexRoute} from 'react-router';
+import { Route, IndexRoute } from 'react-router';
 
 import App from './pages/App.js'
 import PostsIndex from './pages/PostsIndex.js';
@@ -10,5 +10,5 @@ export default (
         <IndexRoute component={Home} />
         <Route path="posts" component={PostsIndex} />
     </Route>
-    
+
 );
