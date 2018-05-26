@@ -7,7 +7,6 @@ import { syncHistoryWithStore } from 'react-router-redux'
 import configureStore from './store/configureStore.js';
 import routes from './routes'
 
-import App from '../src/App';
 import TopNavbar from '../src/compontents/TopNavbar';
 
 const store = configureStore();
