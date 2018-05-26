@@ -9,10 +9,11 @@ class PostsList extends Component {
     renderPosts(posts) {
         return posts.map((post) => {
             return (
-                <li className="list-group-item" key={post._id}>
-                    <Link style={{color:'black'}} to={"posts/" + post._id}>
-                        <h3 className="list-group-item-heading">{post.title}</h3>
-                    </Link>
+                <li className="list-group-item" key={post.id}>
+                    {/*<Link style={{color:'black'}} to={"posts/" + post._id}>*/}
+                        {/*<h3 className="list-group-item-heading">{post.title}</h3>*/}
+                    {/*</Link>*/}
+                        <span key={post.id + 'span'}>{post.text}</span>
                 </li>
             );
         });

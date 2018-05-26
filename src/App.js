@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import PostsList from '../src/containers/PostsListContainer.js';
-import Fbpm from '../src/compontents/Fbpm';
-import { Router, browserHistory, Route } from 'react-router'
-import routes from './routes'
+import { Router, Route } from 'react-router'
 import '../src/App.css';
 import TopNavbar from '../src/compontents/TopNavbar';
 
