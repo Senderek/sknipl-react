@@ -1,3 +1,4 @@
+import { API_URL } from '../globalSettings';
 
 export default  {
     login,
@@ -12,7 +13,7 @@ function login(username, password) {
         body: JSON.stringify({ username, password })
     };
 
-    return fetch('', requestOptions) //TODO: add link
+    return fetch(`${API_URL}/obtain-token/`, requestOptions) //TODO: add link
         .then(response => {
             if (!response.ok) {
                 return Promise.reject(response.statusText);
@@ -43,7 +44,7 @@ function register(user) {
         body: JSON.stringify(user)
     };
 
-    return fetch('/', requestOptions).then(handleResponse); //TODO: add link
+    return fetch(`${API_URL}/users/`, requestOptions).then(handleResponse); //TODO: add link
 }
 
 
