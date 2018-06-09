@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import {userActions} from 'actions./'
+import {userActions} from '../actions/auth.js'
 
 class RegisterPage extends React.Component {
     constructor(props) {

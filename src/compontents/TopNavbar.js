@@ -17,7 +17,7 @@ class TopNavbar extends Component {
                 </a>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link to={`/posts`} className="nav-link" activeClassName="nav-link active">O nas</Link>
+                        <Link to={`/about`} className="nav-link" activeClassName="nav-link active">O nas</Link>
                     </li>
                     <li className="nav-item">
                         <Link to={`/posts`} className="nav-link" activeClassName="nav-link active">Sekcje</Link>
