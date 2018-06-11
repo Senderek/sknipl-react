@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import logo from '../profile_pic.png';
+import TopNavbarAccountContainer from '../containers/TopNavbarAccountContainer';
 
 
 class TopNavbar extends Component {
@@ -29,6 +30,7 @@ class TopNavbar extends Component {
                         <Link to={`/posts`} className="nav-link" activeClassName="nav-link active">Artykuły</Link>
                     </li>
                 </ul>
+                <TopNavbarAccountContainer/>
             </nav>
         );
     }
