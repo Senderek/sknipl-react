@@ -11,7 +11,7 @@ class TopNavbarAccountContainer extends Component {
             return (
                 <div className="navbar-nav ml-auto">
                     <p className="navbar-text">
-                        Hello {this.props.user}!
+                        {/* Hello {this.props.user}! */}
                     </p>
                     <li className="nav-link">
                         <i onClick={this.props.logout} className="fas fa-sign-out-alt fa-3x" title="Logout"></i>
@@ -39,10 +39,10 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        logout : () => {
+        logout: () => {
             dispatch(userActions.logout());
         }
     };
 }
 
-export default connect(mapStateToProps, null)(TopNavbarAccountContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(TopNavbarAccountContainer);
