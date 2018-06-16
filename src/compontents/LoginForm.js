@@ -40,9 +40,16 @@ export default class LoginForm extends React.Component {
         const { loggingIn } = this.props;
         const { username, password, submitted } = this.state;
         return (
-            <div className="col-md-6 col-md-offset-3">
-                <h2>Login</h2>
-                <form name="form" onSubmit={this.handleSubmit}>
+
+            <div className="py-5">
+            <div className="container">
+            <div className="row">
+                <div className="col-md-3"> </div>
+                <div className="col-md-6">
+                <div className="card text-white p-5 bg-dark">
+                    <div className="card-body">
+                    <h1 className="mb-4">Logowanie</h1>
+                    <form name="form" onSubmit={this.handleSubmit}>
                     <div className={'form-group' + (submitted && !username ? ' has-error' : '')}>
                         <label htmlFor="username">Username</label>
                         <input type="text" className="form-control" name="username" value={username} onChange={this.handleChange} />
@@ -64,7 +71,12 @@ export default class LoginForm extends React.Component {
                         }
                         <Link to="/register" className="btn btn-link">Register</Link>
                     </div>
-                </form>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
             </div>
         );
     }

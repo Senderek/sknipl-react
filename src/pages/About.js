@@ -7,14 +7,7 @@ class About extends Component {
     render() {
         return (
             <div className="App">
-                <div className="row">
-                    <div className="column left">
-                        <AboutContainer className="column left"/>
-                    </div>
-                    <div className="column left">
-                        <Fbpm className="column right" />
-                    </div>
-                </div>
+                <AboutContainer />
             </div>
         );
     }

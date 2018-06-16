@@ -6,12 +6,12 @@ class PostsIndex extends Component {
     render() {
         return (
             <div className="App">
-                <div className="row">
-                    <div className="column left">
-                        <PostsList className="column left" />
-                    </div>
-                    <div className="column left">
-                        <Fbpm className="column right" />
+                <div className="p-5">
+                    <div className="container-fluid">
+                        <div className="row">
+                            <PostsList />
+                            <Fbpm />
+                        </div>
                     </div>
                 </div>
             </div>

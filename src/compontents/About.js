@@ -12,9 +12,15 @@ class About extends Component {
         if(first !== undefined)
         {
             return (
-                <div>
-                     <h2>{first.title}</h2>
-                    <p>{first.content}</p>
+                <div className="p-5">
+                    <div className="container-fluid">
+                        <div className="row">
+                            <div className="col-md-12" >
+                                <h1 className="display-4">{first.title}</h1>
+                                <p className="">{first.content}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             );
         }

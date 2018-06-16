@@ -9,12 +9,19 @@ class PostsList extends Component {
     renderPosts(posts) {
         return posts.map((post) => {
             return (
-                <li className="list-group-item" key={post.id}>
-                    {/*<Link style={{color:'black'}} to={"posts/" + post._id}>*/}
-                        {/*<h3 className="list-group-item-heading">{post.title}</h3>*/}
-                    {/*</Link>*/}
-                        <span key={post.id + 'span'}>{post.text}</span>
-                </li>
+                // <li className="list-group-item" key={post.id}>
+                //     {/*<Link style={{color:'black'}} to={"posts/" + post._id}>*/}
+                //         {/*<h3 className="list-group-item-heading">{post.title}</h3>*/}
+                //     {/*</Link>*/}
+                //         <span key={post.id + 'span'}>{post.text}</span>
+                // </li>
+
+                <div className="row">
+                    <div className="col-md-12">
+                        <h1 className="display-4">{post.title}</h1>
+                        <p className="">{post.text}</p>
+                    </div>
+                </div>
             );
         });
     }
@@ -29,11 +36,8 @@ class PostsList extends Component {
         }
 
         return (
-            <div className="container">
-                <h1>Posts</h1>
-                <ul className="list-group">
-                    {this.renderPosts(posts)}
-                </ul>
+            <div className="col-md-8">
+                {this.renderPosts(posts)}
             </div>
         );
     }

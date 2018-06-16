@@ -7,6 +7,10 @@ import { userActions } from '../actions/auth';
 
 class TopNavbarAccountContainer extends Component {
     render() {
+        var iconStyle = {
+            verticalAlign: 'super'
+        }
+
         if (Auth.isUserAuthenticated()) {
             return (
                 <div className="navbar-nav ml-auto">
@@ -22,9 +26,9 @@ class TopNavbarAccountContainer extends Component {
         else {
             return (
                 <ul className="navbar-nav ml-auto">
-                    <li><Link to={"/login"} className="nav-link" title="Sign In"><i className="fa fa-user-circle fa-3x"></i></Link></li>
+                    <li><Link to={"/login"} className="nav-link" title="Sign In"><i className="fa fa-user-circle fa-2x" ></i><span style={iconStyle}> Zaloguj się</span></Link></li>
 
-                    <li><Link to={"/register"} className="nav-link" title="Sign Up"><i className="fas fa-user-plus fa-3x"></i> </Link></li>
+                    <li><Link to={"/register"} className="nav-link" title="Sign Up"><i className="fas fa-user-plus fa-2x" ></i><span style={iconStyle}> Rejestracja</span> </Link></li>
                 </ul>
             );
         }
