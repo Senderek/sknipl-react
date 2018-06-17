@@ -88,7 +88,7 @@ class Fbpm extends React.Component {
 
     render() {
         return (
-            <div className="col-md-4 right" >
+            <div >
                 <div className="fb-page"
                      data-href="https://www.facebook.com/skni.kod/"
                      data-tabs="timeline"
